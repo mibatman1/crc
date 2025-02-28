@@ -161,7 +161,7 @@
             <div class="row">
                 <div class="col-md-12 mb-2">
                     <p class="footer-submit-btn">
-                        <input class="btn_1 outline white" type="submit" value="Submit" id="submit-contact">
+                        <input class="btn_1 outline white" type="submit" value="Submit" id="submit-contact" onclick="handleSubmit()">
                     </p>
                 </div>
             </div>
@@ -711,7 +711,7 @@
                             <div class="row">
                                 <div class="col-md-12 mb-2">
                                     <p class="footer-submit-btn">
-                                        <input class="query-btn" type="submit" value="Submit Now" id="submit-contact1">
+                                        <input class="query-btn" type="submit" value="Submit Now" id="submit-contact1" onclick="handleSubmit()">
                                     </p>
                                 </div>
                             </div>
@@ -897,7 +897,7 @@
                         <div class="row">
                             <div class="col-md-12 mb-2">
                                 <p class="footer-submit-btn">
-                                    <input class="btn_1" type="submit" value="Submit Now" id="submit-contact2">
+                                    <input class="btn_1" type="submit" value="Submit Now" id="submit-contact2" onclick="handleSubmit()">
                                 </p>
                             </div>
                             <div class="inp-box">
@@ -993,6 +993,14 @@
         });
 
     </script>
+
+    <script>
+        function handleSubmit()
+        {
+            console.log("Hello")
+            window.location.href="thanks.html"
+        }
+    </script>
     <script>
         $(document).ready(function () {
             $('.nav-item').click(function () {
@@ -1008,6 +1016,22 @@
             }, 7000)
         })
     </script>
+
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1150930196585159');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1150930196585159&ev=PageView&noscript=1"
+    /></noscript>
 
     <script>
         let dropdownItem = document.querySelectorAll('.show-submenu');
